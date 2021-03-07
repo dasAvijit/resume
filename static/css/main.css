@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+
+/*
+   * Formatting the header area
+   */
+
+header {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    height: 35px;
+    width: 100%;
+    opacity: .9;
+    margin-bottom: 10px;
+}
+
+header h1.logo {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+}
+
+header h1.logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*
+   * Center the body content
+   */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    text-align: left;
+    letter-spacing: -2px;
+}
+
+.menu {
+    float: right;
+    margin-top: 8px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li+li {
+    margin-left: 35px;
+}
+
+.menu li a {
+    color: #444;
+    text-decoration: none;
+}

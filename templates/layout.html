@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Resume of Avijit Das</h1>
+            <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('conspectus') }}">Conspectus</a></li>
+            <li><a href="{{ url_for('experience') }}">Professional Experience</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('training') }}">Scholastic and Training</a></li>
+            <li><a href="{{ url_for('achievements') }}">Achievements</a></li>
+            <li><a href="{{ url_for('contactinfo') }}">Contact Info</a></li>
+          </ul>
+        </nav></strong>
+        </div>
+    </header>
+    <div class="container">
+        {%block content%} {%endblock%}
+    </div>
+</body>
+
+</html>
